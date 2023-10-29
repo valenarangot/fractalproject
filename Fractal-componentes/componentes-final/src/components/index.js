@@ -1,0 +1,6 @@
+export * from "./ButtonBack/ButtonBack"
+export * from "./ButtonCancel/ButtonCancel"
+export * from "./Card1/Card1"
+export * from "./Card2/Card2"
+export * from "./Card3/Card3"
+export * from "./ProyectCard/ProyectCard"
