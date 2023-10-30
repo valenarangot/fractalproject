@@ -3,33 +3,13 @@ import { ButtonFirst } from '../buttons/button-first/ButtonFirst'
 import { ButtonSecond } from '../buttons/button-second/ButtonSecond'
 // import { ButtonCancel } from '../buttons/buttonCancel/ButtonCancel'
 import { logos } from '../../data/toolsLogoData'
+import { ProjectData } from '../../data/projectData'
 import styles from './ModalProject.module.css'
 
 export function ModalProject () {
-  const ProjectInfo = [
-    {
-      id: 1,
-      images: ['./assets/projects/Project1.png', './assets/projects/Project2.png', './assets/projects/Project3.png'],
-      title: 'Nintendo OOH Experience',
-      type: 'UI - Branding',
-      members: 'Isabella Barona, Andrés Narvaez',
-      designTools: {
-        Figma: true,
-        Illustrator: true,
-        Photoshop: false,
-        AfterEffects: false,
-        PremierePro: false
-      },
-      codingTools: {
-        React: true,
-        JS: true,
-        HTML: true,
-        CSS: true,
-        Node: true
-      },
-      description: 'This project looks forward to create an interactive prototype of an Out-Of-Home experience. It is a gaming experience with the goal of catching leads for Nintendo.'
-    }
-  ]
+  const ProjectInfo = [ProjectData[0]]
+  
+  // images: ['./assets/projects/Project1.png', './assets/projects/Project2.png', './assets/projects/Project3.png'],
 
   const designTools = ProjectInfo[0].designTools
   const designToolLogos = Object.keys(designTools)
@@ -112,10 +92,18 @@ export function Project ({ ProjectInfo, designToolLogos, codingToolLogos }) {
 
 function ImageGallery ({ images }) {
   return (
-    <div className={styles.BackgroundImages}>
-      {images.map((image, index) => (
-        <img key={index} src={image} alt={`Image ${index}`} />
-      ))}
+    <div className={styles.BackgroundImage}>
+      <img src={images} alt={`Image`} />
     </div>
   )
 }
+
+// function ImageGallery ({ images }) {
+//   return (
+//     <div className={styles.BackgroundImages}>
+//       {images.map((image, index) => (
+//         <img key={index} src={image} alt={`Image ${index}`} />
+//       ))}
+//     </div>
+//   )
+// }

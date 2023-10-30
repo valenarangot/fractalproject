@@ -16,6 +16,7 @@ Body{
 
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 
     color: white;
     text-align: left;
@@ -39,16 +40,28 @@ Body{
     color: white;
 }
 
-    .BackgroundImages{
+    .BackgroundImage{
         display: flex;
         width: 90vw;
-        overflow-x: auto;
+        
         animation: scrollImages 30s linear infinite; 
     }
-    
-        .BackgroundImages img{
-            height: 85vh;
+
+        .BackgroundImage img{
+            width: 90vw;
         }
+
+    /* .BackgroundImages{
+            display: flex;
+            width: 90vw;
+            overflow-x: auto;
+            animation: scrollImages 30s linear infinite; 
+        } */
+    
+
+        /* .BackgroundImages img{
+            height: 85vh;
+        } */
 
         .HeaderBackground {
             position: absolute;

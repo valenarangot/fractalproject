@@ -5,7 +5,21 @@ export const ProjectData = [
         members:"Andrés Narvaez, Isabella Barona",
         type:"UI-FrontEnd",
         description:"In this project, we aim to create an interactive prototype of an Out-Of-Home experience.",
-        image:"./assets/project-img/Nintendo.png", 
+        images:"./assets/project-img/Nintendo.png",
+        designTools: {
+            Figma: true,
+            Illustrator: true,
+            Photoshop: false,
+            AfterEffects: false,
+            PremierePro: false
+          },
+        codingTools: {
+            React: true,
+            JS: true,
+            HTML: true,
+            CSS: true,
+            Node: true
+        }
     },
 
     { 
@@ -14,7 +28,21 @@ export const ProjectData = [
         members:"Valentina Arango",
         type:"UI-Ux",
         description:"It's a social space where you can share your favorite songs with your friends.",
-        image:"./assets/project-img/Tuner.png", 
+        images:"./assets/project-img/Tuner.png", 
+        designTools: {
+            Figma: true,
+            Illustrator: true,
+            Photoshop: false,
+            AfterEffects: false,
+            PremierePro: false
+          },
+        codingTools: {
+            React: true,
+            JS: true,
+            HTML: true,
+            CSS: true,
+            Node: true
+        }
     },
 
     {
@@ -23,7 +51,21 @@ export const ProjectData = [
         members:"Andrés Narvaez",
         type:"UI-UX",
         description:"A project that aims to enhance the experiences of those who are learning to program.",
-        image:"./assets/project-img/Teep.png", 
+        images:"./assets/project-img/Teep.png", 
+        designTools: {
+            Figma: true,
+            Illustrator: true,
+            Photoshop: false,
+            AfterEffects: false,
+            PremierePro: false
+          },
+        codingTools: {
+            React: true,
+            JS: true,
+            HTML: true,
+            CSS: true,
+            Node: true
+        }
     },
 
     {
@@ -32,7 +74,21 @@ export const ProjectData = [
         members:"Isabella Barona",
         type:"Branding e identidad visual",
         description:"In this project, the brand design for the Indian Ocean country, Mauritius, was created.",
-        image:"./assets/project-img/Mauritius.png", 
+        images:"./assets/project-img/Mauritius.png", 
+        designTools: {
+            Figma: true,
+            Illustrator: true,
+            Photoshop: false,
+            AfterEffects: false,
+            PremierePro: false
+          },
+        codingTools: {
+            React: true,
+            JS: true,
+            HTML: true,
+            CSS: true,
+            Node: true
+        }
     },
 
     {
@@ -41,7 +97,21 @@ export const ProjectData = [
         members:"Isabella Barona",
         type:"UX-UI",
         description:"This digital product motivates people to set and achieve their goals.",
-        image:"./assets/project-img/FitMate.png", 
+        images:"./assets/project-img/FitMate.png", 
+        designTools: {
+            Figma: true,
+            Illustrator: true,
+            Photoshop: false,
+            AfterEffects: false,
+            PremierePro: false
+          },
+        codingTools: {
+            React: true,
+            JS: true,
+            HTML: true,
+            CSS: true,
+            Node: true
+        }
     },
 
     {
@@ -50,7 +120,21 @@ export const ProjectData = [
         members:"Andrés Narvaez",
         type:"UX-UI",
         description:"In this project, we aim to create a visual system capable of solving user complications in virtual education.",
-        image:"./assets/project-img/Ateon.png", 
+        images:"./assets/project-img/Ateon.png", 
+        designTools: {
+            Figma: true,
+            Illustrator: true,
+            Photoshop: false,
+            AfterEffects: false,
+            PremierePro: false
+          },
+        codingTools: {
+            React: true,
+            JS: true,
+            HTML: true,
+            CSS: true,
+            Node: true
+        }
     },
 
     {
@@ -59,7 +143,21 @@ export const ProjectData = [
         members:"Valentina Arango",
         type:"UX-UI",
         description:"This platform aims to leverage digitization to assist and keep people focused during their work sessions.",
-        image:"./assets/project-img/Multiskilled.png", 
+        images:"./assets/project-img/Multiskilled.png", 
+        designTools: {
+            Figma: true,
+            Illustrator: true,
+            Photoshop: false,
+            AfterEffects: false,
+            PremierePro: false
+          },
+        codingTools: {
+            React: true,
+            JS: true,
+            HTML: true,
+            CSS: true,
+            Node: true
+        }
     },
 
     {
@@ -68,7 +166,21 @@ export const ProjectData = [
         members:"Juan Camilo Dorado",
         type:"UI-FrontEnd",
         description:"We aim to conceive, design, and program a prototype for the Out-Of-Home experience with the Mercedes-Benz brand.",
-        image:"./assets/project-img/OOH-Mercedes-Benz.png", 
+        images:"./assets/project-img/OOH-Mercedes-Benz.png", 
+        designTools: {
+            Figma: true,
+            Illustrator: true,
+            Photoshop: false,
+            AfterEffects: false,
+            PremierePro: false
+          },
+        codingTools: {
+            React: true,
+            JS: true,
+            HTML: true,
+            CSS: true,
+            Node: true
+        }
     },
 
     {
@@ -77,7 +189,21 @@ export const ProjectData = [
         members:"Juan Camilo Dorado",
         type:"Ux-UI",
         description:"This application is dedicated to online sales of athletic footwear.",
-        image:"./assets/project-img/Flexin.png", 
+        images:"./assets/project-img/Flexin.png", 
+        designTools: {
+            Figma: true,
+            Illustrator: true,
+            Photoshop: false,
+            AfterEffects: false,
+            PremierePro: false
+          },
+        codingTools: {
+            React: true,
+            JS: true,
+            HTML: true,
+            CSS: true,
+            Node: true
+        }
     },
 
     {
@@ -86,6 +212,20 @@ export const ProjectData = [
         members:"Valentina Arango",
         type:"UX-UI",
         description:"Redesigning the Behance platform, modifying the logo and web design, for all those passionate about cooking.",
-        image:"./assets/project-img/Behance-para-chefs.png", 
+        images:"./assets/project-img/Behance-para-chefs.png", 
+        designTools: {
+            Figma: true,
+            Illustrator: true,
+            Photoshop: false,
+            AfterEffects: false,
+            PremierePro: false
+          },
+        codingTools: {
+            React: true,
+            JS: true,
+            HTML: true,
+            CSS: true,
+            Node: true
+        }
     },
 ]
