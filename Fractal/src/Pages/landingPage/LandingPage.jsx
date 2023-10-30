@@ -17,14 +17,14 @@ export function LandingPage () {
                         <ButtonFirst title="See more" />
                     </div>
                     <div className={styles.contentSection1Right}>
-                        <img src="./assets/background-img/rectangle1.png"/>
+                        <img src="./assets/background-img/fondo1.png"/>
                     </div>
                 </div>
 
                 <div className={styles.section2}>
                     <div className={styles.contentSection2Left}>
                         <h1>About us</h1>
-                        <img src="./assets/background-img/rectangle2.png" />
+                        <img src="./assets/background-img/fondo2.png" />
                     </div>
                     <div className={styles.contentSection2Right}>
                         <CardLanding icon='./assets/icons/flag-icon.png' content='At Fractal, our mission is to shape the digital future with creativity, passion and a unique vision. As a young and fresh agency, we are committed to deliver innovative UX/UI, frontend and branding designs that exceed our clients'/>

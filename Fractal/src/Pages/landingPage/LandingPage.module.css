@@ -14,9 +14,9 @@
 }
 
     .contentSection1Left{
-       
+        margin-top: 15vh;
         padding-top: 10vh;
-        padding-left: 5vw;
+        padding-left: 8vw;
         text-align: left;
     }
 
@@ -39,7 +39,7 @@
 
         .contentSection1Right img{
             width: 60vw;
-            margin-right: -10vw;
+            margin-right: 10vw;
             
           }
 
