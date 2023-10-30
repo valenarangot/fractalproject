@@ -1,7 +1,4 @@
-body{
-  background-color: blueviolet;
 
-}
 
 body.modal-open {
   backdrop-filter: blur(5px);

@@ -1,0 +1,39 @@
+
+
+.section1{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 1vh 1vw;
+ 
+}
+
+    .contentSection1Left{
+       
+        padding-top: 10vh;
+        padding-left: 5vw;
+        text-align: left;
+    }
+
+        .contentSection1Left h1{
+
+            padding-bottom: 3vh;
+        }
+
+        .contentSection1Left p{
+
+            width: 25vw;    
+            padding-bottom: 3vh;
+        }
+
+        .contentSection1Right{
+          margin-right: -10vw;
+          margin-top: -10vh;
+         
+        }
+
+        .contentSection1Right img{
+            width: 60vw;
+            margin-right: -10vw;
+            
+          }

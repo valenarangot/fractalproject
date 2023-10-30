@@ -1,11 +1,17 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import { ProjectsPage, UserExperiencePage, LoginPage, SubmitPage, TestPage } from './pages'
+import { ProjectsPage, UserExperiencePage, LoginPage, SubmitPage, TestPage, LandingPage } from './pages'
 
 export function AppRouter () {
   return (
     <main>
       <Routes>
+
+      <Route
+          path='/Landing'
+          element={<LandingPage />}
+        />
+
         <Route
           path='/'
           element={<TestPage />}
