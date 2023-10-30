@@ -1,9 +1,11 @@
 import React from 'react'
-import { Cabezote, ServicesSlider, ProjectForm } from '../components'
+import { Cabezote, ServicesSlider, ProjectForm, Footer, Header, ContactSection } from '../components'
 
 export function TestPage () {
     return (
       <>
+        <Header/>
+
         <Cabezote type='UI' />
         <Cabezote type='UX' />
         <Cabezote type='Frontend' />
@@ -13,6 +15,8 @@ export function TestPage () {
   
         <ServicesSlider />
         <ProjectForm />
+        <ContactSection />
+        <Footer/>
       </>
     )
   }

@@ -1,10 +1,11 @@
 import React from 'react'
-import { AppRouter } from './AppRouter'
+import {UserExperiencePage} from './Pages/UserExperiencePage/UserExperiencePage.jsx'
+//import { AppRouter } from './AppRouter'
 
 function App () {
   return (
     <>
-      <AppRouter />
+      <UserExperiencePage />
     </>
   )
 }
