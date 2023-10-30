@@ -1,11 +1,11 @@
 import React from 'react'
-import { TeamInteraction } from './components/team-interaction/TeamInteraction'
+import {AppRouter} from './AppRouter'
 
 
 function App () {
   return (
     <>
-      <TeamInteraction />
+      <AppRouter />
     </>
   )
 }
