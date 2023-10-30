@@ -21,7 +21,7 @@ export function TeamInteraction (){
     return(
         
         <div className={styles.modalAction}>
-            <h1>Team</h1>
+            <h1>Our team</h1>
             <div className={styles.carrouselTeam}>
             {membersData.map((member)=>(
                 <TeamCard key={member.id} member={member} onClick={() => openModal(member)}/>

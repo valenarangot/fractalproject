@@ -48,12 +48,11 @@
     display: flex;
     justify-content: space-between;
     margin: 1vh 1vw;
-    
- 
 }
 
     .contentSection2Left{
         padding-left: 0;
+        margin-left: 0;
     }
 
     .contentSection2Left h1{
@@ -68,7 +67,17 @@
         display: flex; /* Utilizamos flexbox para controlar el diseño */
         flex-direction: column; /* Establecemos una dirección de columna para apilar elementos verticalmente */
         align-items: center;
-    
     }
 
     
+.section4{
+    margin-top: 15vh;
+}
+
+    .section4 h1{
+        margin-bottom: -5vh;
+    }
+
+.section5{
+    margin-bottom: -10vh;
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import { ButtonFirst, Header, TeamInteraction } from "../../components";
 import styles from './LandingPage.module.css'
-import { CardLanding } from "../../components/card-landing/CardLanding";
+import { CardLanding, ServicesSlider, ContactSection, Footer } from "../../components";
 
 
 export function LandingPage () {
@@ -35,14 +35,19 @@ export function LandingPage () {
 
                 <div className={styles.section3}>
                     <TeamInteraction />
-
                 </div>
 
-               
+                <div className={styles.section4}>
+                    <h1>Our services</h1>
+                    <ServicesSlider/>
+                </div>
 
+                <div className={styles.section5}>
+                    <ContactSection/>
+                </div>
             </div>
             
-
+            <Footer/>
            
         </>
     )

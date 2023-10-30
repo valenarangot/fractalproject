@@ -8,7 +8,7 @@ export function AppRouter () {
       <Routes>
 
       <Route
-          path='/Landing'
+          path='/'
           element={<LandingPage />}
         />
 

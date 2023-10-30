@@ -12,6 +12,7 @@ export * from './Cards/card2/Card2'
 export * from './Cards/card3/Card3'
 export * from './team-card/TeamCard'
 export * from './proyectCard/ProyectCard'
+export * from './card-landing/CardLanding'
 
 export * from './team-interaction/TeamInteraction'
 export * from './servicesSlider/ServicesSlider'
