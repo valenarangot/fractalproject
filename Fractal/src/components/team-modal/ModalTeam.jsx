@@ -1,13 +1,14 @@
 import React from 'react'
 import { membersData } from '../../data/membersData'
 import { ButtonFirst } from '../buttons/button-first/ButtonFirst'
+import { ButtonCancel } from '../buttons/buttonCancel/ButtonCancel'
 import styles from './ModalTeam.module.css'
 
 export function ModalTeam({member, onClick, onClose }){
     
     return(
         <div className={styles.ModalTeam}>
-            <button className={styles.btnClose} onClick={onClose}/>
+            <ButtonCancel className={styles.btnClose} onClick={onClose}/>
             {/* <span className='closePreview' onClick={onclose}>
                 &times;
                 </span>

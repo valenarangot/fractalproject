@@ -1,4 +1,9 @@
-
+.landingContent{
+    display: flex; /* Utilizamos flexbox para controlar el diseño */
+    flex-direction: column; /* Establecemos una dirección de columna para apilar elementos verticalmente */
+    align-items: center;
+    
+}
 
 .section1{
     width: 100vw;
@@ -37,3 +42,33 @@
             margin-right: -10vw;
             
           }
+
+.section2{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 1vh 1vw;
+    
+ 
+}
+
+    .contentSection2Left{
+        padding-left: 0;
+    }
+
+    .contentSection2Left h1{
+        margin-left: -15vw;
+        padding-left: 0;
+        padding-bottom: 10vh;
+    }
+
+    .contentSection2Right{
+        padding-top: 20vh;
+        padding-right: 10vw;
+        display: flex; /* Utilizamos flexbox para controlar el diseño */
+        flex-direction: column; /* Establecemos una dirección de columna para apilar elementos verticalmente */
+        align-items: center;
+    
+    }
+
+    

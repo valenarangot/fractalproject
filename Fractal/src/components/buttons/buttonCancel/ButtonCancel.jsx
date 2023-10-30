@@ -1,5 +1,5 @@
 import React from "react";
-import './ButtonCancel.css'
+import styles from'./ButtonCancel.module.css'
 
 export function ButtonCancel({title, onClick}){
 
@@ -7,7 +7,7 @@ export function ButtonCancel({title, onClick}){
         <>
         
         <button 
-        className="button-cancel"
+        className={styles.buttonCancel}
         onClick={onClick}>
         {title} X
         </button>

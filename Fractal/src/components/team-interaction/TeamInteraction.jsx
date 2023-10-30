@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import { ModalTeam } from '../team-modal/ModalTeam';
 import { TeamCard } from '../team-card/TeamCard';
 import { membersData } from '../../data/membersData';
-import { ButtonFirst } from '../buttons/button-first/ButtonFirst';
 import styles from './TeamInteraction.module.css'
 
 export function TeamInteraction (){
@@ -23,7 +22,6 @@ export function TeamInteraction (){
         
         <div className={styles.modalAction}>
             <h1>Team</h1>
-            <ButtonFirst title='Helloooo'/>
             <div className={styles.carrouselTeam}>
             {membersData.map((member)=>(
                 <TeamCard key={member.id} member={member} onClick={() => openModal(member)}/>

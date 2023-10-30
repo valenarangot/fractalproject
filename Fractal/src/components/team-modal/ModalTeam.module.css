@@ -4,13 +4,15 @@ Body{
 
 .ModalTeam{
     width: 70vw;
-    position: absolute;
+    position: fixed;
+    margin-top: 7vh;
+    margin-bottom: 30vh;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
-    border-radius: 20%;
+    border-radius: 5rem;
 
 
     color: white;
@@ -20,8 +22,8 @@ Body{
 
 .btnClose{
     width: 30px;
-    position: fixed;
-    right: 0;
+    
+  
 }
 
 .HeaderModal{
@@ -29,7 +31,7 @@ Body{
     height: 40vh;
     margin: 0;
     padding: 0 10vh ;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 19.05%, rgba(0, 0, 0, 0.00) 100%);
+    background: linear-gradient(0deg, rgba(253, 122, 0, 0.799) 19.05%, rgba(0, 0, 0, 0.00) 100%);;
 
     display: flex;
     justify-content: space-between;
@@ -41,6 +43,7 @@ Body{
 .HeaderModal h1{
     font-weight: normal;
     margin: 1vh 0;
+    color: white;
 }
 
 .HeaderModal h3{
