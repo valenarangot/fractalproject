@@ -2,8 +2,12 @@ import React from "react";
 import { ButtonFirst, Header, TeamInteraction } from "../../components";
 import styles from './LandingPage.module.css'
 import { CardLanding, ServicesSlider, ContactSection, Footer } from "../../components";
+import { useNavigate } from 'react-router-dom'
 
 export function LandingPage () {
+    
+    const navigate = useNavigate()
+
     return(
         <>
             <Header />
@@ -14,7 +18,7 @@ export function LandingPage () {
                         <p>
                         Get ready to captivate your customers! Turn your concepts into stunning interfaces with our team of UX/UI and frontend experts. Let's talk now to bring your brand to the top!
                         </p> 
-                        <ButtonFirst title="See more" />
+                        <ButtonFirst onClick={() => navigate('/Projects')} title="See more" />
                     </div>
                     <div className={styles.contentSection1Right}>
                         <img src="./assets/background-img/fondo1.png"/>

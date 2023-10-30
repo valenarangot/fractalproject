@@ -7,7 +7,7 @@ export function ButtonFirst({title, onClick}){
         <>
             <button
             className={styles.buttonFirst}
-            onClick={onclick}>
+            onClick={onClick}>
             {title}
             </button>
         </>
