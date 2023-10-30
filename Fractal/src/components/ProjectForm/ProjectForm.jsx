@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { ButtonFirst } from '../buttons/button-first/ButtonFirst'
 import styles from './ProjectForm.module.css'
 
 export function ProjectForm () {
@@ -23,7 +24,7 @@ export function ProjectForm () {
           <div className={styles.ImagesSection}>
             {selectedImagesCount === 0
               ? (
-                <img className={styles.LoadImg} src='./src/components/Assets/IconLoadImage.svg' alt='Load icon' />
+                <img className={styles.LoadImg} src='../assets/icons/IconLoadImage.svg' alt='Load icon' />
                 )
               : (
                 <h2 className={styles.LoadText}>{`${selectedImagesCount}  selected`}</h2>
@@ -124,7 +125,7 @@ export function ProjectForm () {
       </div>
 
       {/* Submit */}
-      <button type='submit'>Submit</button>
+      <ButtonFirst title='Send' />
     </form>
   )
 }

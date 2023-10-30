@@ -1,0 +1,7 @@
+.proyect-card{
+    width: 620px;
+    height: 717px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(16, 18, 30, 0.10) 0%, rgba(16, 18, 30, 0.75) 100%);
+}

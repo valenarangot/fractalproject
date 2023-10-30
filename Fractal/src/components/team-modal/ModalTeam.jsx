@@ -1,6 +1,6 @@
 import React from 'react'
 import { membersData } from '../../data/membersData'
-import { ButtonFirst } from '../button-first/ButtonFirst'
+import { ButtonFirst } from '../buttons/button-first/ButtonFirst'
 
 export function ModalTeam({member, onClick, onClose }){
     

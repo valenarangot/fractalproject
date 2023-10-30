@@ -1,19 +1,36 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import { TestPage, ModalPage } from './Pages'
+import { ProjectsPage, UserExperiencePage, LoginPage, SubmitPage } from './pages'
 
 export function AppRouter () {
   return (
     <main>
       <Routes>
-        <Route
+        {/* <Route
           path='/'
-          element={<TestPage />}
-        />
+          element={<LandingPage />}
+        /> */}
+        
         <Route
-          path='/Modal'
-          element={<ModalPage />}
+          path='/Projects'
+          element={<ProjectsPage />}
         />
+
+        <Route
+          path='/Services/UX'
+          element={<UserExperiencePage />}
+        />
+
+        <Route
+          path='/Login'
+          element={<LoginPage />}
+        />
+
+        <Route
+          path='/admin/submit'
+          element={<SubmitPage />}
+        />
+
       </Routes>
     </main>
   )

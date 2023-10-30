@@ -48,7 +48,7 @@ Body{
             z-index: -1;
         }
         
-        @keyframes scrollImages {
+        /* @keyframes scrollImages {
             0% {
               transform: translateX(0);
             }
@@ -58,7 +58,7 @@ Body{
             100% {
                 transform: translateX(0);
               }
-          }
+          } */
 
     .HeaderTitle{
         margin-bottom: 0;

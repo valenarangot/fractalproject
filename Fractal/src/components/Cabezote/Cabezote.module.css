@@ -1,8 +1,3 @@
-@font-face {
-    font-family: 'Typographica';
-    src: url('./src/Assets/Fonts/Typographica-Blp5.ttf');
-  }
-
   :root {
     --DegradadoCabezote: linear-gradient(90deg, rgb(83, 50, 216) 0%, rgba(83, 50, 216, 0.70) 33.67%, rgba(255, 255, 255, 0.20) 100%), 
   }
@@ -22,37 +17,37 @@
     .UI {
         background-image: 
                             var(--DegradadoCabezote)
-                            url('../../components/Assets/SliderUI.png');
+                            url('../../../assets/cabezote/SliderUI.png');
     }
   
     .UX {
         background-image: 
                             var(--DegradadoCabezote)
-                            url('../../components/Assets/SliderUX.jpg');
+                            url('../../../assets/cabezote/SliderUX.jpg');
     }
 
     .Frontend {
         background-image: 
                             var(--DegradadoCabezote)
-                            url('../../components/Assets/SliderFrontend.png');
+                            url('../../../assets/cabezote/SliderFrontend.png');
     }
 
     .Branding {
         background-image:
                             var(--DegradadoCabezote)
-                            url('../../components/Assets/SliderBranding.jpg');
+                            url('../../../assets/cabezote/SliderBranding.jpg');
    }
 
     .Consultancy {
         background-image: 
                             var(--DegradadoCabezote)
-                            url('../../components/Assets/SliderConsultancy.jpeg');
+                            url('../../../assets/cabezote/SliderConsultancy.jpeg');
     }
 
     .Projects {
         background-image:   
                             var(--DegradadoCabezote)
-                            url('../../components/Assets/SliderProjects.png');
+                            url('../../../assets/cabezote/SliderProjects.png');
     }
 
 .TextDiv{
