@@ -1,6 +1,6 @@
 //Landing
 
-
+export * from './landingPage/LandingPage'
 //Services
 export * from './servicePages/UserExperiencePage/UserExperiencePage'
 

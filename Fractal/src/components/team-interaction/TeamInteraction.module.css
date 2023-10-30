@@ -1,6 +1,18 @@
-body{
-  background-color: blueviolet;
 
+.modalAction{
+  width: 100vw;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  margin-top: 10vh;
+  background-color: var(--Purple);
+    
+    
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modalAction h1{
+  color: white;
 }
 
 body.modal-open {

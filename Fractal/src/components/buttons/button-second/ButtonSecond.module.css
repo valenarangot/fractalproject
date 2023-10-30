@@ -14,7 +14,7 @@
   }
   
   .buttonSecond:hover {
-    background: white;
+    background: rgb(223, 216, 250);
     color: var(--Purple);
     border: 2px;
     border-color: var(--Purple);
