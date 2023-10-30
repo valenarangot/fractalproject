@@ -1,50 +1,61 @@
 import React from 'react'
 import { ButtonFirst } from '../buttons/button-first/ButtonFirst'
 import { ButtonSecond } from '../buttons/button-second/ButtonSecond'
-// import { ButtonCancel } from '../buttons/buttonCancel/ButtonCancel'
+import { ButtonCancel } from '../buttons/buttonCancel/ButtonCancel'
 import { logos } from '../../data/toolsLogoData'
 import { ProjectData } from '../../data/projectData'
 import styles from './ModalProject.module.css'
 
-export function ModalProject () {
-  const ProjectInfo = [ProjectData[0]]
-  
-  // images: ['./assets/projects/Project1.png', './assets/projects/Project2.png', './assets/projects/Project3.png'],
+export function ModalProject ({project, onClose}) {
+  console.log(project);
+  // imagess: ['./assets/projects/Project1.png', './assets/projects/Project2.png', './assets/projects/Project3.png'],
 
-  const designTools = ProjectInfo[0].designTools
-  const designToolLogos = Object.keys(designTools)
-    .filter((tool) => designTools[tool])
+  console.log(project.designTools);
+  const userDesignTools = project.designTools
+  const designToolLogos = Object.keys(userDesignTools)
+    .filter((tool) => userDesignTools[tool])
     .map((tool) => logos[tool])
 
-  const codingTools = ProjectInfo[0].codingTools
+  const codingTools = project.codingTools
   const codingToolLogos = Object.keys(codingTools)
     .filter((tool) => codingTools[tool])
     .map((tool) => logos[tool])
 
   return (
-    <div>
-      <Project
-        ProjectInfo={ProjectInfo}
-        designToolLogos={designToolLogos}
-        codingToolLogos={codingToolLogos}
-      />
+    <div className={styles.Overlay}>
+      <div className={styles.ModalContainer}>
+        <div className={styles.CloseButton}>
+          <ButtonCancel onClick={onClose} />
+        </div>
+        <Project
+          project={project}
+          designToolLogos={designToolLogos}
+          codingToolLogos={codingToolLogos}
+          />
+        </div>
     </div>
   )
 }
 
-export function Project ({ ProjectInfo, designToolLogos, codingToolLogos }) {
-  const { id, images, title, type, members, description } = ProjectInfo[0]
+export function Project ({ project, designToolLogos, codingToolLogos }) {
+  
+  const { id, images, title, type, members, description } = project
+
+  const background = {
+    backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.50) 19.05%, rgba(0, 0, 0, 0.00) 100%), url(${images})`,
+    backgroundSize: 'cover'
+  }
 
   return (
     
     <div key={id} className={styles.Modal}>
-      <div className={styles.Header}>
-        <div className={styles.HeaderBackground}>
-          <ImageGallery images={images} />
-        </div>
+      <div className={styles.Header} style={background}>
+        {/* <div className={styles.HeaderBackground}>
+          <ImagesGallery images={images} />
+        </div> */}
         <div className={styles.HeaderTitle}>
           <h1> {title} </h1>
-          <h3> <i>{type}</i>  </h3>
+          <h3> <i>{type}</i></h3>
         </div>
       </div>
       <div className={styles.Body}>
@@ -90,19 +101,19 @@ export function Project ({ ProjectInfo, designToolLogos, codingToolLogos }) {
   )
 }
 
-function ImageGallery ({ images }) {
-  return (
-    <div className={styles.BackgroundImage}>
-      <img src={images} alt={`Image`} />
-    </div>
-  )
-}
+// function ImagesGallery ({ images }) {
+//   return (
+//     <div className={styles.BackgroundImage}>
+//       <img src={images} alt={`Images`} />
+//     </div>
+//   )
+// }
 
-// function ImageGallery ({ images }) {
+// function ImagesGallery ({ imagess }) {
 //   return (
 //     <div className={styles.BackgroundImages}>
-//       {images.map((image, index) => (
-//         <img key={index} src={image} alt={`Image ${index}`} />
+//       {imagess.map((images, index) => (
+//         <img key={index} src={images} alt={`Images ${index}`} />
 //       ))}
 //     </div>
 //   )

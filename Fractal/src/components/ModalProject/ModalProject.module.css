@@ -1,23 +1,35 @@
-Body{
-    overflow-x: hidden;
+.Overlay{
+    background-color: rgba(0, 0, 0, 0.50);
+    width: 100vw;
+    height: 150vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(5px);
 }
 
-.CloseButton{
-    z-index: 1;
-}
-
-.Modal{
+.ModalContainer{
     width: 90vw;
-
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
 
+
+.CloseButton{
+    z-index: 1;
+    position: absolute;
+    margin: 2vh;
+    top: 0;
+    right: 0;
+    scale: 1.1;
+}
+
+.Modal{
     display: flex;
     flex-direction: column;
-    overflow: hidden;
-
+    overflow-y: auto;
     color: white;
     text-align: left;
     font-family: Montserrat;
@@ -27,8 +39,7 @@ Body{
     height: 80vh;
     margin: 0;
     padding: 0 0 5vh 10vh;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 19.05%, rgba(0, 0, 0, 0.00) 100%);
-
+    /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 19.05%, rgba(0, 0, 0, 0.00) 100%); */
     display: flex; 
     flex-direction: column; 
     justify-content: flex-end;
@@ -40,16 +51,18 @@ Body{
     color: white;
 }
 
-    .BackgroundImage{
+    /* .BackgroundImage{
+        overflow-y: hidden;
         display: flex;
         width: 90vw;
         
         animation: scrollImages 30s linear infinite; 
-    }
+    } */
 
-        .BackgroundImage img{
+        /* .BackgroundImage img{
+            overflow: hidden;
             width: 90vw;
-        }
+        } */
 
     /* .BackgroundImages{
             display: flex;
@@ -63,12 +76,13 @@ Body{
             height: 85vh;
         } */
 
-        .HeaderBackground {
+        /* .HeaderBackground {
             position: absolute;
+            overflow: hidden;
             top: 0;
             left: 0;
             z-index: -1;
-        }
+        } */
         
         /* @keyframes scrollImages {
             0% {
@@ -113,4 +127,7 @@ Body{
     
     .ButtonDiv{
         margin: 0 auto;
+        width: 20vw;
+        display: flex;
+        justify-content: space-around;
     }

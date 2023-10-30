@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { Header, Footer, Cabezote, ProyectCard } from '../../components'
+import { Header, Footer, Cabezote, ProyectCard, ModalProject } from '../../components'
 import {ProjectData} from '../../data/projectData'
 import styles from './ProjectsPage.module.css'
 
@@ -29,7 +29,17 @@ export function ProjectsPage () {
         }
       ]
 
+      const [selectedProject,setSelectedProject] = useState(null);
+
       console.log(ProjectData);
+
+      const openModal = (project) => {
+            setSelectedProject(project);
+        };
+    
+        const closeModal = () => {
+            setSelectedProject(null);
+        };
 
     return (
       <>
@@ -41,10 +51,13 @@ export function ProjectsPage () {
                 <FilterOptions className={styles.filter} filters={filters}/>
             </div>
         </header>
-        <div className={styles.Projects}>
-            {ProjectData.map((project)=>(
-                <ProyectCard key={project.id} project={project} onClick={() => openModal(project)}/>
-                ))}   
+        <div>
+            <div className={styles.Projects}>
+                {ProjectData.map((project)=>(
+                    <ProyectCard key={project.id} project={project} onClick={() => openModal(project)}/>
+                    ))}   
+            </div>
+            {selectedProject && <ModalProject project={selectedProject} onClose={closeModal}/>}
         </div>
         <Footer />
       </>
@@ -56,6 +69,7 @@ export function ProjectsPage () {
     const filterStyles = {
       display: 'flex',
       listStyle: 'none',
+      zIndex: '2'
     }
   
     return (

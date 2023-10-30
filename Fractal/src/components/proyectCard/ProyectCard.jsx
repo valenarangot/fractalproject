@@ -2,9 +2,8 @@ import React from "react";
 import './ProyectCard.css'
 
 export function ProyectCard({project, onClick}){
-    console.log(project.image);
     const background = {
-        backgroundImage: `linear-gradient(180deg, rgba(16, 18, 30, 0.10) 0%, rgba(16, 18, 30, 0.75) 100%), url('${project.image}')`,
+        backgroundImage: `linear-gradient(180deg, rgba(16, 18, 30, 0.10) 0%, rgba(16, 18, 30, 0.75) 100%), url('${project.images}')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center'
     }
