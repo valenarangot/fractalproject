@@ -1,30 +1,42 @@
 import React from 'react'
 import { membersData } from '../../data/membersData'
-import { ButtonFirst } from '../button-first/ButtonFirst'
+import { ButtonFirst } from '../buttons/button-first/ButtonFirst'
+import styles from './ModalTeam.module.css'
 
 export function ModalTeam({member, onClick, onClose }){
     
     return(
-        <div className='modal'>
-            <span className='closePreview' onClick={onclose}>
+        <div className={styles.ModalTeam}>
+            <button className={styles.btnClose} onClick={onClose}/>
+            {/* <span className='closePreview' onClick={onclose}>
                 &times;
                 </span>
-                <ButtonFirst onClick={onClose}/>
-            <div className='memberCardHeader'>
-                <img src={member.image} alt={member.name}/>
-                <h4>{member.name}</h4>
-                <p>{member.charge}</p>   
+                <ButtonFirst onClick={onClose}/> */}
+            <div className={styles.HeaderModal}>
+                <div>
+                    <h1>{member.name}</h1>
+                    <h3>{member.charge}</h3>
+                </div>
+                    <img src={member.image} alt={member.name}/> 
             </div>
-            <div className='memberCardContent'>
-                <p>{member.description}</p>
-                <p>Tools and skills</p>
-                <ul>
-                {Object.entries(member.tools).map(([tool, value]) =>
-                value ? <li key={tool}>{tool}</li> : null
-                )}
-                </ul>
-                <ButtonFirst onClick={onclick}/>
+            <div className={styles.backgroundContent}>
+                    <div className={styles.ContentModal}>
+                        <div className={styles.ContentLeft}>
+                            <h2>About {member.name}</h2>
+                            <p>{member.description}</p> 
+                        </div>
+                        <div className={styles.ContentRight}>
+                            <h4>Tools and skills</h4>
+                            <ul>
+                            {Object.entries(member.tools).map(([tool, value]) =>
+                            value ? <li key={tool}>{tool}</li> : null
+                            )}
+                            </ul>
+                        </div>
+                    </div>
+                <ButtonFirst className={styles.btnFirst} title='See portfolio' onClick={onclick}/>
             </div>
+            
         </div>
     )
 }

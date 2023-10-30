@@ -1,11 +1,12 @@
 import React from "react";
+import styles from './ButtonFirst.module.css'
 
 export function ButtonFirst({title, onClick}){
 
     return (
         <>
             <button
-            className="ButtonFirst"
+            className={styles.buttonFirst}
             onClick={onclick}>
             {title}
             </button>
