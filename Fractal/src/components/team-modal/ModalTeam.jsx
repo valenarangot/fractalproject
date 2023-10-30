@@ -7,8 +7,12 @@ import styles from './ModalTeam.module.css'
 export function ModalTeam({member, onClick, onClose }){
     
     return(
+    <div className={styles.Overlay}>
+            
         <div className={styles.ModalTeam}>
-            <ButtonCancel className={styles.btnClose} onClick={onClose}/>
+            <div className={styles.btnClose}>
+                <ButtonCancel onClick={onClose}/>
+            </div>
             {/* <span className='closePreview' onClick={onclose}>
                 &times;
                 </span>
@@ -39,5 +43,7 @@ export function ModalTeam({member, onClick, onClose }){
             </div>
             
         </div>
+    </div>
+        
     )
 }

@@ -7,7 +7,7 @@ export function ButtonSecond({title, onClick}){
         <>
             <button
             className={styles.buttonSecond}
-            onClick={onclick}>
+            onClick={onClick}>
             {title}
             </button>
         </>

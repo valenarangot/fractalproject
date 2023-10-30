@@ -3,7 +3,6 @@ import { ButtonFirst, Header, TeamInteraction } from "../../components";
 import styles from './LandingPage.module.css'
 import { CardLanding, ServicesSlider, ContactSection, Footer } from "../../components";
 
-
 export function LandingPage () {
     return(
         <>
@@ -18,7 +17,7 @@ export function LandingPage () {
                         <ButtonFirst title="See more" />
                     </div>
                     <div className={styles.contentSection1Right}>
-                        <img src="./assets/background-img/rectangle1.png" />
+                        <img src="./assets/background-img/rectangle1.png"/>
                     </div>
                 </div>
 

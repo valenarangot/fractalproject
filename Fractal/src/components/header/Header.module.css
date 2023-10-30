@@ -17,6 +17,7 @@
 .nav img{
     height: 2.5rem;
     object-fit: cover;
+    cursor: pointer;
 }
 
 .list{

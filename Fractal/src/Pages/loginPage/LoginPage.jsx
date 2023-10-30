@@ -1,11 +1,18 @@
 import React from 'react'
 import styles from "./LoginPage.module.css"
-import { LoginForm } from '../../components'
+import { LoginForm, ButtonBack  } from '../../components'
+
+import { useNavigate } from 'react-router-dom'
 
 export function LoginPage () {
 
+    const navigate = useNavigate()
+
     return <main className={styles.loginContainer}>
         <aside className={styles.image}>
+            <div className={styles.ButtonBack}>
+                <ButtonBack onClick={() => navigate('/')}/>
+            </div>
             <img src="assets\imgs\FondoLogin.png" alt="login" />
         </aside>
         <section className={styles.formSection}>

@@ -18,6 +18,14 @@
     object-fit: cover;
 }
 
+.ButtonBack{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    margin: 3vh 3vw;
+}
+
 .formSection{
     width: 60%;
     height: 100vh;

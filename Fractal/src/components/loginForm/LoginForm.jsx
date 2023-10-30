@@ -1,7 +1,9 @@
 import React from "react"
 import styles from "./LoginForm.module.css"
+import { useNavigate } from 'react-router-dom'
 
 export function LoginForm (){
+    const navigate = useNavigate()
 
     const submitHandler = ()=>{
         console.log("Submit")
@@ -19,7 +21,7 @@ export function LoginForm (){
         </div>
         <div className={styles.actions}>
             <span>Si no eres administrador, vuelve a la página principal</span>
-            <button>Ingresar</button>
+            <button onClick={() => navigate('/admin/submit')} >Ingresar</button>
         </div>
     </form>
 }

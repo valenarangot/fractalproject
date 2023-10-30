@@ -1,37 +1,44 @@
 import React, { useState } from 'react'
 import styles from './ServicesSlider.module.css'
+import { NavLink } from 'react-router-dom'
 
 export function ServicesSlider () {
+
   const items = [
     {
       id: 1,
       text: 'UX Design',
       icon: 'assets/icons/IconUX.svg',
-      iconWhite: 'assets/icons/IconWhiteUX.svg'
+      iconWhite: 'assets/icons/IconWhiteUX.svg',
+      path: '/Services/UX'
     },
     {
       id: 2,
       text: 'UI Design',
       icon: 'assets/icons/IconUI.svg',
-      iconWhite: 'assets/icons/IconWhiteUI.svg'
+      iconWhite: 'assets/icons/IconWhiteUI.svg',
+      path: '/Services/UX'
     },
     {
       id: 3,
       text: 'Frontend',
       icon: 'assets/icons/IconFrontend.svg',
-      iconWhite: 'assets/icons/IconWhiteFrontend.svg'
+      iconWhite: 'assets/icons/IconWhiteFrontend.svg',
+      path: '/Services/UX'
     },
     {
       id: 4,
       text: 'Branding',
       icon: 'assets/icons/IconBranding.svg',
-      iconWhite: 'assets/icons/IconWhiteBranding.svg'
+      iconWhite: 'assets/icons/IconWhiteBranding.svg',
+      path: '/Services/UX'
     },
     {
       id: 5,
       text: 'Consultancy',
       icon: 'assets/icons/IconConsultancy.svg',
-      iconWhite: 'assets/icons/IconWhiteConsultancy.svg'
+      iconWhite: 'assets/icons/IconWhiteConsultancy.svg',
+      path: '/Services/UX'
     }
   ]
 
@@ -58,7 +65,7 @@ export function Menu ({ menu }) {
 
 function Service ({ item }) {
   const [showList, setShowList] = useState(false)
-  const { id, text, icon, iconWhite } = item
+  const { id, text, icon, iconWhite, path } = item
 
   const toggleShowList = () => setShowList(true)
 
@@ -67,6 +74,7 @@ function Service ({ item }) {
   const hoverStyle = {
     fontWeight: '600',
     fontFamily: 'Montserrat',
+    textDecoration: 'none',
 
     color: 'white',
     backgroundColor: showList ? '#FF7D00' : '#5332D8',
@@ -106,10 +114,12 @@ function Service ({ item }) {
 
   return (
     <li key={id} style={hoverStyle} onMouseLeave={toggleState} onMouseEnter={toggleShowList}>
-      <div style={hoverIconDiv}>
-        <img style={hoverIcon} src={showList ? iconWhite : icon} />
-      </div>
-      <a> {text} </a>
+        <NavLink to={path}>
+        <div style={hoverIconDiv}>
+          <img style={hoverIcon} src={showList ? iconWhite : icon} />
+        </div>
+        <a className={styles.linkStyle}> {text} </a>
+      </NavLink>
     </li>
   )
 }
