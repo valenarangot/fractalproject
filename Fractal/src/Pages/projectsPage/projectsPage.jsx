@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import { Header, Footer, Cabezote, ProyectCard } from '../../components'
+import {ProjectData} from '../../data/projectData'
 import styles from './ProjectsPage.module.css'
 
 export function ProjectsPage () {
@@ -28,6 +29,8 @@ export function ProjectsPage () {
         }
       ]
 
+      console.log(ProjectData);
+
     return (
       <>
         <Header />
@@ -38,7 +41,11 @@ export function ProjectsPage () {
                 <FilterOptions className={styles.filter} filters={filters}/>
             </div>
         </header>
-        <ProyectCard />
+        <div className={styles.Projects}>
+            {ProjectData.map((project)=>(
+                <ProyectCard key={project.id} project={project} onClick={() => openModal(project)}/>
+                ))}   
+        </div>
         <Footer />
       </>
     )
@@ -91,11 +98,12 @@ export function ProjectsPage () {
   function Dropdownlist ({ options }) {
     const liStyle = {
       listStyle: 'none',
-      backgroundColor: 'white',
+      backgroundColor: '#ffffff',
       margin: '0 -5vh',
       padding: '1vh 2vh',
       cursor: 'pointer',
-      boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)'
+      boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)',
+      zIndex: '2'
     }
     const ulStyle = {
       borderRadius: '8px'

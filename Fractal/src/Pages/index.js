@@ -10,3 +10,5 @@ export * from './projectsPage/projectsPage'
 // Paginas admin
 export * from './loginPage/LoginPage'
 export * from './submitPage/SubmitPage'
+
+export * from './testPage/testPage'

@@ -1,16 +1,16 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import { ProjectsPage, UserExperiencePage, LoginPage, SubmitPage } from './pages'
+import { ProjectsPage, UserExperiencePage, LoginPage, SubmitPage, TestPage } from './pages'
 
 export function AppRouter () {
   return (
     <main>
       <Routes>
-        {/* <Route
+        <Route
           path='/'
-          element={<LandingPage />}
-        /> */}
-        
+          element={<TestPage />}
+        />
+
         <Route
           path='/Projects'
           element={<ProjectsPage />}

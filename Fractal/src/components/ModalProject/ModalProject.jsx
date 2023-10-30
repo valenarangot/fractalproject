@@ -1,11 +1,15 @@
 import React from 'react'
+import { ButtonFirst } from '../buttons/button-first/ButtonFirst'
+import { ButtonSecond } from '../buttons/button-second/ButtonSecond'
+// import { ButtonCancel } from '../buttons/buttonCancel/ButtonCancel'
+import { logos } from '../../data/toolsLogoData'
 import styles from './ModalProject.module.css'
 
 export function ModalProject () {
   const ProjectInfo = [
     {
       id: 1,
-      images: ['./assets/projects/Project1.png', './assets/projects/Project1.png', './assets/projects/Project1.png'],
+      images: ['./assets/projects/Project1.png', './assets/projects/Project2.png', './assets/projects/Project3.png'],
       title: 'Nintendo OOH Experience',
       type: 'UI - Branding',
       members: 'Isabella Barona, Andrés Narvaez',
@@ -17,7 +21,7 @@ export function ModalProject () {
         PremierePro: false
       },
       codingTools: {
-        Github: true,
+        React: true,
         JS: true,
         HTML: true,
         CSS: true,
@@ -26,19 +30,6 @@ export function ModalProject () {
       description: 'This project looks forward to create an interactive prototype of an Out-Of-Home experience. It is a gaming experience with the goal of catching leads for Nintendo.'
     }
   ]
-
-  const logos = {
-    Figma: 'https://cdn.icon-icons.com/icons2/2429/PNG/512/figma_logo_icon_147289.png',
-    Illustrator: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/2101px-Adobe_Illustrator_CC_icon.svg.png',
-    Photoshop: 'https://logodownload.org/wp-content/uploads/2019/10/adobe-photoshop-logo.png',
-    AfterEffects: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Adobe_After_Effects_CC_icon.svg/2101px-Adobe_After_Effects_CC_icon.svg.png',
-    PremierePro: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Adobe_Premiere_Pro_CC_icon.svg/2101px-Adobe_Premiere_Pro_CC_icon.svg.png',
-    Github: 'https://cdn.icon-icons.com/icons2/2429/PNG/512/github_logo_icon_147285.png',
-    JS: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png',
-    HTML: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png',
-    CSS: 'https://icons-for-free.com/download-icon-css3-1331550887274886564_512.png',
-    Node: 'https://static-00.iconduck.com/assets.00/node-js-icon-227x256-913nazt0.png'
-  }
 
   const designTools = ProjectInfo[0].designTools
   const designToolLogos = Object.keys(designTools)
@@ -65,6 +56,7 @@ export function Project ({ ProjectInfo, designToolLogos, codingToolLogos }) {
   const { id, images, title, type, members, description } = ProjectInfo[0]
 
   return (
+    
     <div key={id} className={styles.Modal}>
       <div className={styles.Header}>
         <div className={styles.HeaderBackground}>
@@ -110,8 +102,8 @@ export function Project ({ ProjectInfo, designToolLogos, codingToolLogos }) {
         </div>
 
         <div className={styles.ButtonDiv}>
-          <button>Go back</button>
-          <button>Go to Behance</button>
+          <ButtonSecond title='Go back' />
+          <ButtonFirst title='Go to Behance'/>
         </div>
       </div>
     </div>
